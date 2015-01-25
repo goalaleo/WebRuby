@@ -6,6 +6,11 @@ gem 'rails', '4.0.2'
 ruby '2.0.0'
 
 group :development, :test do
+  gem 'byebug'
+  gem 'web-console', '~> 2.0'
+end
+
+group :development, :test do
   gem 'sqlite3'
 end
 
