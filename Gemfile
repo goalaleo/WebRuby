@@ -5,7 +5,9 @@ gem 'rails', '4.0.2'
 
 ruby '2.0.0'
 
+
 group :development, :test do
+  gem "better_errors"
   gem 'byebug'
   gem 'web-console', '~> 2.0'
 end
@@ -48,7 +50,7 @@ group :doc do
 end
 
 # Use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.1.2'
+ gem 'bcrypt-ruby', '~> 3.1.2'
 
 # Use unicorn as the app server
 # gem 'unicorn'
