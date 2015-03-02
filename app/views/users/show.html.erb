@@ -10,11 +10,14 @@
   <% end %>
 </p>
 
+<p><%= "Favorite style is #{@user.favorite_style}"%></p>
+<p><%= "Favorite brewery is #{@user.favorite_brewery}"%></p>
+
 
 <%if @user.beer_clubs.empty? %>
     <p>the user is not a member of any club</p>
 <% else %>
-    <td nowrap> member of<% @user.beer_clubs.each do |club| %>
+    <td nowrap> Member of<% @user.beer_clubs.each do |club| %>
           <%= link_to club.name, club %> </td>
       <% end %>
 <% end %>

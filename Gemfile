@@ -10,10 +10,16 @@ group :development, :test do
   gem "better_errors"
   gem 'byebug'
   gem 'web-console', '~> 2.0'
+  gem 'rspec-rails', '~> 3.0'
+  gem 'rspec-its'
+  gem 'sqlite3'
 end
 
-group :development, :test do
-  gem 'sqlite3'
+group :test do
+  gem 'factory_girl_rails'
+  gem 'capybara'
+  gem 'launchy'
+  gem 'simplecov', require:false
 end
 
 group :production do

@@ -19,4 +19,5 @@
     </ul>
 <% end %>
 
-<%= link_to 'Edit', edit_beer_club_path(@beer_club) %> |
+<td><%= link_to('Edit', edit_beer_club_path(@beer_club)) unless current_user.nil? %></td></br>
+<td><%= link_to('Destroy the club', @beer_club, method: :delete, data: { confirm: 'Are you sure?' }) unless current_user.nil? %></td>
