@@ -7,6 +7,7 @@ script:
 - bundle exec rake db:test:prepare
 - bundle exec rspec -fd spec/
 deploy:
+  provider: heroku
   api_key:
     secure: c1uXqUb01DAHAjsrepgWx43mX+Y2dDC1lc118KgA7hceh6fmkGSBL/jtawCrYMmoHsKJttMqQlsZtVGZnIk6rT4oPrDsyHySAVkSXLxUGne0cw7Fu208WYiKuzLFdS+nWENDPnrt0SR8BT76XvBC/Ljjr4cEuJHJR3e23eblq3A=
 app: lit-beyond-4461
